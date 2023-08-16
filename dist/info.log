@@ -1,0 +1,9 @@
+Wed 16 Aug 2023 14:41:58 choose_ball.py INFO 红球数量：7
+Wed 16 Aug 2023 14:41:58 choose_ball.py INFO 蓝球数量：2
+Wed 16 Aug 2023 14:41:58 choose_ball.py INFO 所选号码为：[2, 12, 19, 27, 31, 32, 33, 2, 15]
+Wed 16 Aug 2023 14:42:08 choose_ball.py INFO 红球数量：7
+Wed 16 Aug 2023 14:42:08 choose_ball.py INFO 蓝球数量：2
+Wed 16 Aug 2023 14:42:08 choose_ball.py INFO 所选号码为：[3, 5, 14, 20, 25, 29, 33, 12, 16]
+Wed 16 Aug 2023 14:43:45 choose_ball.py INFO 红球数量：9
+Wed 16 Aug 2023 14:43:45 choose_ball.py INFO 蓝球数量：2
+Wed 16 Aug 2023 14:43:45 choose_ball.py INFO 所选号码为：[8, 12, 14, 15, 19, 23, 24, 30, 31, 10, 16]

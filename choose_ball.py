@@ -39,9 +39,10 @@ if __name__=="__main__":
 
     # 文件路径
     #cur_dir = os.path.dirname(sys.executable)
-    cur_dir = os.path.dirname(os.path.abspath(__file__))
-    #cur_dir = os.getcwd()
-    log_path = os.path.join(cur_dir, "info.log")
+    #cur_dir = os.path.dirname(os.path.abspath(__file__))
+    cur_dir = os.getcwd()
+    #log_path = os.path.join(cur_dir, "info.log")
+    log_path = cur_dir + '/info.log'
     logging.basicConfig(filename=log_path, 
                         level=logging.DEBUG,
                         encoding='utf-8',
@@ -50,7 +51,7 @@ if __name__=="__main__":
 
     # 设置页面
     tk_obj = Tk()
-    im = Image.open(os.path.join(cur_dir,"ball.png"))
+    im = Image.open(cur_dir+'/ball.png')
     photo = ImageTk.PhotoImage(im)
     tk_obj.wm_iconphoto(True,photo)
     #tk_obj.iconbitmap(os.path.join(cur_dir,"ball.ico"))
@@ -75,7 +76,7 @@ if __name__=="__main__":
     Entry(tk_obj, textvariable=blue_ball_nums_str, width=3, font='宋体 12').place(x=250, y=130)
     # 选择支付方式
     def pay_photo():
-        dict={1:os.path.join(cur_dir,"wechatpay.png"),2:os.path.join(cur_dir,"alipay.png")}
+        dict={1:cur_dir+'/wechatpay.png',2:cur_dir+'/alipay.png'}
         img_path = dict.get(v.get())
         global image
         # 使用全局变量 防止图片不显示
